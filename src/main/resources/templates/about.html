@@ -22,16 +22,13 @@
     <!-- Navbar content -->
     <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;">
         <div class="container-fluid">
-
             <img class="float-left img-thumbnail" alt="Logo" width="50" height="30" src="/img/logo.png"/>
-
-            <a class="navbar-brand fw-bold" href="#"> Thymeleaf</a>
+            <a class="navbar-brand fw-bold" href="#">Thymeleaf</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-
                     <a class="nav-link active" aria-current="page" th:href="@{/home/index}">Home</a>
                     <a class="nav-link" th:href="@{/home/contact}">Add Contact</a>
                     <a class="nav-link" th:href="@{/home/list}">Contact List</a>
@@ -41,9 +38,16 @@
         </div>
     </nav>
 
-    <div class="text-center text-uppercase fs-1 fw-bold"><br><br><br>
-            <p th:text="#{index.text}" >text here</p><br><br><br>
+    <div class="card border-primary mb-3 mx-auto" style="max-width: 40rem; margin-top: 10rem;">
+        <div class="card-header">About</div>
+        <div class="card-body text-primary">
+            <h5 class="card-title">About This Web Page</h5>
+            <p class="card-text">This web page is an exercise about Thymeleaf. It contains four part to run it.
+            This exercise is one of the Lexicon's company project in the Java Developer course.</p>
+        </div>
     </div>
+
+
 
 
 </body>
